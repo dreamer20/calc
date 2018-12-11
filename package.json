@@ -2,7 +2,6 @@
   "name": "calc",
   "version": "1.0.0",
   "description": "Calculator",
-  "main": "calc.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
