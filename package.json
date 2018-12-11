@@ -1,0 +1,16 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "Calculator",
+  "main": "calc.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Ghavrilov Aleksandr",
+  "license": "ISC"
+}

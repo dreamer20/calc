@@ -4,120 +4,134 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="calc.js" defer></script>
   <title>Calculator</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="display"></div>
+  <div class="container" id='calculator'>
+    <div class="row display-container">
+      <div class="display" id="display">
+        <div class="display-text">
+          <div class="history" id="history">
+            
+          </div>
+
+          <div class="expression-line" id='expressionLine'>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="column">
-        <button class="button">
+        <button class="button button-clear" data-which="18">
           C 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-backspace" data-which="8">
           < 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-percent" data-which="37">
           % 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-operator" data-which="47">
           / 
         </button>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" id="name" data-which="49">
           1 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="50">
           2 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="51">
           3 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-operator" data-which="42">
           * 
         </button>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="52">
           4 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="53">
           5 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="54">
           6 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-operator" data-which="45">
           - 
         </button>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="55">
           7 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="56">
           8 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="57">
           9 
         </button>
       </div>
       <div class="column">
-        <button class="button">
+        <button class="button button-operator" data-which="43">
           + 
         </button>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <button class="button">
+        <button class="button button-dot" data-which="46">
           . 
         </button>
       </div>
       <div class="column">
-        <button class="button button-number">
+        <button class="button button-number" data-which="48">
           0 
         </button>
       </div>
       <div class="column">
-        <button class="button button-equals">
+        <button class="button button-equals" data-which="61">
           = 
         </button>
       </div>
     </div>
   </div>
+  <p class="tip">
+    <span class="tip-caption">Tip:</span> <span>Click on current expression to edit it.</span>
+  </p>
 </body>
 </html>
