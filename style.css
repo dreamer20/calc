@@ -110,11 +110,8 @@ body {
   background: #353535;
   overflow: auto;
   flex-grow: 1;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: column-reverse;
-  padding: 6px 10px;
+  display: flex; 
+  padding: 6px 10px;  
 }
 
 .display-text {
@@ -122,12 +119,15 @@ body {
   font-family: 'VT323', monospace;
   font-size: 24px;
   width: 100%;
-  min-height: 1px;
+  flex: 0 0 auto;
+  height: auto;
   text-align: right;
+  margin-top: auto;
 }
 
 .expression-element {
   cursor: pointer;
+  min-height: 1px;
 }
 
 .no-cursor {
@@ -141,6 +141,7 @@ body {
 
 .history * {
   cursor: default;
+  min-height: 1px;
 }
 
 .divider {
